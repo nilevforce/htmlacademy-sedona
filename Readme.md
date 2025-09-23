@@ -1,6 +1,6 @@
-# Личный проект
+# Личный проект «Седона»
 
-* Студент: Nikolai Levchenko.
+* Студент: [Nikolai Levchenko](https://htmlacademy.ru/profile/id2676009).
 
 ---
 
