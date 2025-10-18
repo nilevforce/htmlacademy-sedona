@@ -1,0 +1,269 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Components */
+
+/* Button basic */
+
+.button-basic {
+  color: #ffffff;
+  background-color: #756157;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-basic:hover,
+.button-basic:focus {
+  background-color: #615048;
+}
+
+.button-basic:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+/* Button second */
+
+.button-second {
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-second:hover,
+.button-second:focus {
+  background-color: #68A2CA;
+}
+
+.button-second:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+/* Button second */
+
+.button-second {
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-second:hover,
+.button-second:focus {
+  background-color: #68A2CA;
+}
+
+.button-second:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+/* Pages */
+
+/* Page header */
+
+.page-header {
+  padding: 0 70px;
+}
+
+.navigation-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation-link .button-basic {
+  padding: 8px 34px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+/* Hero */
+
+.hero {
+  color: #000000;
+  background-color: #c2c2c2;
+  background-image: url('../images/background-hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+/* Advatages */
+
+.advantages {
+  text-align: center;
+}
+
+.advantages-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.advantages-list {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-item .advantages-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-item:nth-child(2),
+.advantages-item:nth-child(4) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-with-image {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+/* Services */
+
+.services {
+  text-align: center;
+}
+
+.services-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.services-list {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.services-item .services-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.services-item:nth-child(1),
+.services-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+/* Booking */
+
+.booking {
+  text-align: center;
+}
+
+.booking-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.booking-button-search-hotel {
+  padding: 8px 50px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+/* Newsletter */
+
+.newsletter {
+  color: #ffffff;
+  background-color: #c2c2c2;
+  background-image: url('../images/background-newsletter.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.newsletter-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.newsletter-input {
+  padding: 14px 20px;
+  width: 452px;
+  max-height: 52px;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter-input:focus,
+.newsletter-input:active {
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.newsletter-button-submit {
+  padding: 8px 50px;
+  width: 232px;
+  height: 52px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Footer */
+
+.footer-contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гостиницы Седоны</title>
+
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
 
   <body>
@@ -37,7 +39,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <a class="navigation-link button-basic" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -124,8 +126,8 @@
             </fieldset>
 
             <div class="catalog-filter-actions">
-              <button class="button catalog-filter-apply-button" type="submit">Применить</button>
-              <button class="button catalog-filter-reset-button" type="reset">Сбросить</button>
+              <button class="catalog-filter-apply-button button-second" type="submit">Применить</button>
+              <button class="catalog-filter-reset-button" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -135,29 +137,31 @@
         <header class="catalog-results-header">
           <h2 class="catalog-results-title">Найдено гостиниц: 38</h2>
 
-          <select class="select-control" name="sort-by" aria-label="Сортировка">
-            <option value="popular">Сначала популярные</option>
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
+          <div class="sorting-container">
+            <select class="select-control" name="sort-by" aria-label="Сортировка">
+              <option value="popular">Сначала популярные</option>
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
 
-          <ul class="view-mode-list">
-            <li class="view-mode-item">
-              <a class="button view-mode-button-current" href="./catalog.html?view=tile" aria-current="page">
-                <span class="visually-hidden">Показать карточки</span>
-              </a>
-            </li>
-            <li class="view-mode-item">
-              <a class="button view-mode-button" href="./catalog.html?view=card">
-                <span class="visually-hidden">Показать по одной карточке с описанием</span>
-              </a>
-            </li>
-            <li class="view-mode-item">
-              <a class="button view-mode-button" href="./catalog.html?view=list">
-                <span class="visually-hidden">Показать список</span>
-              </a>
-            </li>
-          </ul>
+            <ul class="view-mode-list">
+              <li class="view-mode-item">
+                <a class="button view-mode-button-current" href="./catalog.html?view=tile" aria-current="page">
+                  <span class="visually-hidden">Показать карточки</span>
+                </a>
+              </li>
+              <li class="view-mode-item">
+                <a class="button view-mode-button" href="./catalog.html?view=card">
+                  <span class="visually-hidden">Показать по одной карточке с описанием</span>
+                </a>
+              </li>
+              <li class="view-mode-item">
+                <a class="button view-mode-button" href="./catalog.html?view=list">
+                  <span class="visually-hidden">Показать список</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </header>
 
         <ul class="product-list">

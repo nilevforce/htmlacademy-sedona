@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона - туристический город</title>
+
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
 
   <body>
@@ -37,7 +39,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <a class="navigation-link button-basic" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -46,12 +48,12 @@
     <main class="main-index">
       <section class="hero">
         <h1 class="visually-hidden">Сайт города Седона</h1>
-        <img class="hero-image" src="./images/icons/hero-welcome-text.svg" width="458" height="352"
+        <img class="hero-image" src="./images/hero-welcome-text.svg" width="458" height="352"
           alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
       </section>
 
       <section class="advantages">
-        <h2 class="advantages-title">Седона — небольшой городок в Аризоне заслуживающий большего!</h2>
+        <h2 class="advantages-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
         <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages-list">
           <li class="advantages-item advantages-item-with-image">
@@ -104,7 +106,7 @@
         <h2 class="booking-title">Заинтересовались?</h2>
         <p class="booking-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
           гостиниц в Седоне</p>
-        <button class="booking-button" type="button">Поиск гостиницы в Седоне</button>
+        <button class="booking-button-search-hotel button-basic" type="button">Поиск гостиницы в Седоне</button>
       </section>
 
       <section class="newsletter">
@@ -114,7 +116,7 @@
           <label class="visually-hidden" for="newsletter-email">Укажите ваш e-mail</label>
           <input class="newsletter-input" type="email" name="email" id="newsletter-email" placeholder="Ваш e-mail"
             required>
-          <button class="newsletter-button" type="submit">Подписаться</button>
+          <button class="newsletter-button-submit button-second" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
