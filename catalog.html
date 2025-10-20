@@ -39,7 +39,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link button-basic" href="#">Хочу сюда!</a>
+            <a class="button button-primary" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -126,8 +126,8 @@
             </fieldset>
 
             <div class="catalog-filter-actions">
-              <button class="catalog-filter-apply-button button-second" type="submit">Применить</button>
-              <button class="catalog-filter-reset-button" type="reset">Сбросить</button>
+              <button class="catalog-filter-apply-button button button-secondary" type="submit">Применить</button>
+              <button class="catalog-filter-reset-button button button-ghost" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -146,17 +146,18 @@
 
             <ul class="view-mode-list">
               <li class="view-mode-item">
-                <a class="button view-mode-button-current" href="./catalog.html?view=tile" aria-current="page">
+                <a class="view-mode-button view-mode-button-current" href="./catalog.html?view=tile"
+                  aria-current="page">
                   <span class="visually-hidden">Показать карточки</span>
                 </a>
               </li>
               <li class="view-mode-item">
-                <a class="button view-mode-button" href="./catalog.html?view=card">
+                <a class="view-mode-button" href="./catalog.html?view=card">
                   <span class="visually-hidden">Показать по одной карточке с описанием</span>
                 </a>
               </li>
               <li class="view-mode-item">
-                <a class="button view-mode-button" href="./catalog.html?view=list">
+                <a class="view-mode-button" href="./catalog.html?view=list">
                   <span class="visually-hidden">Показать список</span>
                 </a>
               </li>
@@ -175,8 +176,8 @@
               <p class="product-card-type">Гостиница</p>
               <b class="product-card-price">От 4000 ₽</b>
               <div class="product-card-actions">
-                <a class="button product-card-button-show-more" href="#">Подробнее</a>
-                <button class="button product-card-button-favorite" type="button">В избранное</button>
+                <a class="product-card-button-show-more button button-primary" href="#">Подробнее</a>
+                <button class="product-card-button-favorite button button-secondary" type="button">В избранное</button>
               </div>
               <div class="product-card-rating">
                 <p class="visually-hidden">4 звезды</p>
@@ -195,9 +196,8 @@
               <p class="product-card-type">Гостиница</p>
               <b class="product-card-price">От 5000 ₽</b>
               <div class="product-card-actions">
-                <a class="button product-card-button-show-more" href="#">Подробнее</a>
-                <button class="button product-card-button-favorite product-card-button-favorite-active" type="button">В
-                  избранном</button>
+                <a class="product-card-button-show-more button button-primary" href="#">Подробнее</a>
+                <button class="product-card-button-favorite button button-success" type="button">В избранном</button>
               </div>
               <div class="product-card-rating">
                 <p class="visually-hidden">4 звезды</p>
@@ -216,8 +216,8 @@
               <p class="product-card-type">Гостиница</p>
               <b class="product-card-price">От 2500 ₽</b>
               <div class="product-card-actions">
-                <a class="button product-card-button-show-more" href="#">Подробнее</a>
-                <button class="button product-card-button-favorite" type="button">В избранное</button>
+                <a class="product-card-button-show-more button button-primary" href="#">Подробнее</a>
+                <button class="product-card-button-favorite button button-secondary" type="button">В избранное</button>
               </div>
               <div class="product-card-rating">
                 <p class="visually-hidden">3 звезды</p>
@@ -236,8 +236,8 @@
               <p class="product-card-type">Гостиница</p>
               <b class="product-card-price">От 1500 ₽</b>
               <div class="product-card-actions">
-                <a class="button product-card-button-show-more" href="#">Подробнее</a>
-                <button class="button product-card-button-favorite" type="button">В избранное</button>
+                <a class="product-card-button-show-more button button-primary" href="#">Подробнее</a>
+                <button class="product-card-button-favorite button button-secondary" type="button">В избранное</button>
               </div>
               <div class="product-card-rating">
                 <p class="visually-hidden">2 звезды</p>
@@ -255,7 +255,7 @@
             <a class="pagination-link" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagi nation-link" href="#">3</a>
+            <a class="pagination-link" href="#">3</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
@@ -270,12 +270,12 @@
       </section>
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="newsletter-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="POST">
           <label class="visually-hidden" for="newsletter-email">Укажите ваш e-mail</label>
           <input class="newsletter-input" type="email" name="email" id="newsletter-email" placeholder="Ваш e-mail"
             required>
-          <button class="button newsletter-button" type="submit">Подписаться</button>
+          <button class="newsletter-button-submit button button-secondary" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
