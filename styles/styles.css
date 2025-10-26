@@ -14,7 +14,14 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
@@ -120,23 +127,57 @@ body {
 
 /* Pages */
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /* Page header */
 
 .page-header {
   padding: 0 70px;
+  box-sizing: border-box;
+}
+
+.header-inner-container {
+  display: flex;
+}
+
+.header-logo {
+  margin-right: 28px;
+}
+
+.navigation {
+  display: flex;
+  flex-grow: 1;
 }
 
 .navigation-list {
+  width: 360px;
+  margin: 0;
+  padding: 0;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   color: inherit;
   text-decoration: none;
+  list-style-type: none;
 }
 
 .navigation-link {
   color: inherit;
   text-decoration: inherit;
+}
+
+.navigation-user {
+  max-width: 270px;
+  margin-left: auto;
+}
+
+/* Main */
+
+.main-container {
+  flex-grow: 1;
 }
 
 /* Hero */
@@ -165,8 +206,24 @@ body {
 }
 
 .advantages-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 21px;
+  list-style-type: none;
+}
+
+.advantages-item-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item-wrapper .advantages-item {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 112px 85px;
 }
 
 .advantages-item .advantages-title {
@@ -180,13 +237,28 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item-bg-alt {
-    background-color: rgba(131, 179, 211, 0.2);
+.advantages-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 102px 85px;
+}
+
+.advantages-image {
+  width: auto;
+  height: auto;
+  flex-grow: 1;
+  vertical-align: bottom;
 }
 
 .advantages-item-with-image {
+  display: flex;
   color: #ffffff;
   background-color: #82B3D3;
+}
+
+.advantages-item-bg-alt {
+    background-color: rgba(131, 179, 211, 0.2);
 }
 
 /* Services */
@@ -203,8 +275,18 @@ body {
 }
 
 .services-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 21px;
+  list-style-type: none;
+}
+
+.services-item {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 80px 85px;
 }
 
 .services-item .services-title {
@@ -221,6 +303,10 @@ body {
 /* Booking */
 
 .booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 95px 35px;
   text-align: center;
 }
 
@@ -229,6 +315,10 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.booking-description {
+  max-width: 590px;
 }
 
 .booking-button-search-hotel {
@@ -241,6 +331,10 @@ body {
 /* Newsletter */
 
 .newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 95px 260px;
   text-align: center;
 }
 
@@ -251,6 +345,11 @@ body {
   text-transform: uppercase;
 }
 
+.newsletter-form {
+  display: flex;
+
+}
+
 .newsletter-input {
   padding: 14px 20px;
   width: 452px;
@@ -259,13 +358,14 @@ body {
   line-height: 24px;
   background-color: #F2F2F2;
   border: none;
-  border-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .newsletter-input:focus,
 .newsletter-input:active {
-  border: 3px solid #83B3D3;
-  outline: none;
+  border-radius: 4px;
+  outline: 3px solid #83B3D3;
 }
 
 .newsletter-button-submit {
@@ -277,6 +377,8 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .newsletter-bg-img {
@@ -289,6 +391,14 @@ body {
 }
 
 /* Footer */
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 75px;
+  box-sizing: border-box;
+}
 
 .footer-contacts-phone {
   font-size: 40px;

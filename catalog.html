@@ -10,42 +10,44 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <a class="header-logo-link" href="index.html" aria-current="page">
-        <img class="header-logo" src="./images/icons/logo.svg" width="140" height="70" alt="Логотип Седоны">
-      </a>
-      <nav class="navigation">
-        <ul class="navigation-list navigation-main">
-          <li class="navigation-item">
-            <a class="navigation-link" href="./index.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О Cедоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" aria-current="page">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Отелей в избранном:</span>
-              <span class="count">12</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="button button-primary" href="#">Хочу сюда!</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="page-header page-container">
+      <div class="header-inner-container">
+        <a class="header-logo-link" href="index.html" aria-current="page">
+          <img class="header-logo" src="./images/icons/logo.svg" width="140" height="70" alt="Логотип Седоны">
+        </a>
+        <nav class="navigation">
+          <ul class="navigation-list navigation-main">
+            <li class="navigation-item">
+              <a class="navigation-link" href="./index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Cедоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-current" aria-current="page">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Отелей в избранном:</span>
+                <span class="count">12</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="button button-primary" href="#">Хочу сюда!</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main class="main-catalog">
+    <main class="main-catalog main-container page-container">
       <div class="catalog-hero">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -268,6 +270,7 @@
           </li>
         </ul>
       </section>
+
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
@@ -280,7 +283,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-container">
       <section class="footer-socials">
         <ul class="social-list">
           <h2 class="visually-hidden">Наши социальные сети</h2>
