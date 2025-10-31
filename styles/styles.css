@@ -14,12 +14,6 @@
   font-display: swap;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 html {
   height: 100%;
 }
@@ -37,6 +31,19 @@ body {
 
 main {
   flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Components */
@@ -150,21 +157,21 @@ main {
   box-sizing: border-box;
 }
 
-.header-inner-container {
-  display: flex;
-}
-
 .header-logo {
-  margin-right: 28px;
+  vertical-align: bottom;
 }
 
 .navigation {
   display: flex;
-  flex-grow: 1;
+  align-items: center;
+  gap: 30px;
 }
 
 .navigation-list {
-  width: 360px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 360px;
   margin: 0;
   padding: 0;
   font-size: 20px;
@@ -176,6 +183,8 @@ main {
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   color: inherit;
   text-decoration: inherit;
 }
@@ -185,12 +194,23 @@ main {
   margin-left: auto;
 }
 
+.navigation-user .navigation-link {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.navigation-user .button {
+  padding: 8px 34px;
+}
+
 /* Main */
 
 /* Hero */
 
 .hero {
   color: #000000;
+  padding-top: 50px;
+  padding-bottom: 80px;
   background-color: #c2c2c2;
   background-image: url('../images/background-hero.jpg');
   background-position: center;
@@ -205,11 +225,24 @@ main {
   text-align: center;
 }
 
+.advantages-header {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
 .advantages-title {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.advantages-description {
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-list {
@@ -222,14 +255,17 @@ main {
   list-style-type: none;
 }
 
+.advantages-item {
+  box-sizing: border-box;
+}
+
 .advantages-item-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
 
 .advantages-item-wrapper .advantages-item {
-  flex-grow: 1;
-  flex-basis: 0;
+  width: 400px;
   padding: 112px 85px;
 }
 
@@ -245,17 +281,16 @@ main {
 }
 
 .advantages-item-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 102px 85px;
+  padding: 112px 85px;
 }
 
 .advantages-image {
-  width: auto;
   height: auto;
-  flex-grow: 1;
   vertical-align: bottom;
+}
+
+.advantages-item-with-image:last-child .advantages-image {
+  order: -1;
 }
 
 .advantages-item-with-image {
@@ -274,11 +309,24 @@ main {
   text-align: center;
 }
 
+.services-header {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .services-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.services-description {
+  margin: 0;
+  padding: 0;
 }
 
 .services-list {
@@ -297,6 +345,7 @@ main {
 }
 
 .services-item .services-title {
+  margin-bottom: 30px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -313,11 +362,15 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 95px 35px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   text-align: center;
 }
 
 .booking-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -325,13 +378,16 @@ main {
 }
 
 .booking-description {
+  margin: 0;
+  margin-bottom: 54px;
+  padding: 0;
   max-width: 590px;
 }
 
+
+/* TODO: Кнопка не совпадает с макетом, нужно переделать */
 .booking-button-search-hotel {
-  padding: 8px 50px;
   font-size: 20px;
-  font-weight: 700;
   line-height: 36px;
 }
 
@@ -403,8 +459,22 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 75px;
-  box-sizing: border-box;
+  padding: 40px 75px;
+}
+
+.social-list {
+  display: flex;
+  max-width: 200px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-link {
+  display: block;
+  padding: 14px 12px;
+  min-width: 24px;
+  min-height: 14px;
 }
 
 .footer-contacts-phone {
