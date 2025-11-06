@@ -200,6 +200,7 @@ main {
 }
 
 .navigation-user .button {
+  display: block;
   padding: 8px 34px;
 }
 
@@ -464,6 +465,7 @@ main {
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   max-width: 200px;
   margin: 0;
   padding: 0;
@@ -530,6 +532,7 @@ main {
 .catalog-filter-form {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-title {
@@ -592,6 +595,7 @@ main {
 
 .view-mode-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin: 0;
   padding: 0;
@@ -676,6 +680,7 @@ main {
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin: 0;
   padding: 0;
