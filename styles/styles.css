@@ -53,6 +53,7 @@ main {
 .button {
   padding: 8px 50px;
   color: #ffffff;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -582,6 +583,7 @@ main {
 .sorting-container {
   display: flex;
   align-items: center;
+  max-width: 600px;
 }
 
 .sorting-container .select-control {
@@ -591,6 +593,7 @@ main {
 .view-mode-list {
   display: flex;
   flex-wrap: wrap;
+  max-width: 300px;
   gap: 8px;
   margin: 0;
   padding: 0;
@@ -624,8 +627,8 @@ main {
 /* Product list */
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin: 0;
   margin-bottom: 80px;
@@ -633,9 +636,21 @@ main {
   list-style-type: none;
 }
 
-.product-item {
+/* .product-item {
   padding: 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  box-sizing: border-box;
+} */
+
+.product-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 16px 20px;
   width: 340px;
+  height: 100%;
+  padding: 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   box-sizing: border-box;
@@ -646,7 +661,23 @@ main {
   text-decoration: none;
 }
 
+.product-card-image-link {
+  grid-column: 1 / -1;
+}
+
+.product-card-image {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.product-card-title-link {
+  grid-column: 1 / -1;
+}
+
 .product-card-title {
+  margin: 0;
+  padding: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -654,20 +685,46 @@ main {
 
 .product-card-type,
 .product-card-price {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   color: #333333;
 }
 
+.product-card-price {
+  justify-self: end;
+}
+
+
+.product-card .button {
+  width: 140px;
+  margin: 0;
+  padding: 8px 18px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.product-card-button-favorite {
+  justify-self: end;
+}
+
 .product-card-rating-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 140px;
   height: 37px;
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   font-weight: normal;
   line-height: 20px;
   background-color: #F2F2F2;
+  border-radius: 4px;
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
 }
 
