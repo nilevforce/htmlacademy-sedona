@@ -655,6 +655,10 @@ main {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+.modal-container.close {
+  display: none;
+}
+
 .modal {
   position: relative;
   width: 720px;
@@ -820,7 +824,7 @@ main {
 }
 
 .field-message {
-  display: none;
+  display: block;
   position: absolute;
   top: 100%;
   left: 0;
@@ -830,18 +834,15 @@ main {
   padding: 0 20px 0 20px;
   font-size: 16px;
   line-height: 21px;
+  color: #333333;
   white-space: wrap;
   overflow: hidden;
   overflow-y: scroll;
   box-sizing: border-box;
 }
 
-.field-message.is-error {
+.field-message.error {
   color: #FF5757;
-}
-
-.field-message.is-active {
-  display: block;
 }
 
 .counter-control {
@@ -979,12 +980,8 @@ main {
   color: #ffffff;
   white-space: normal;
   max-height: 160px;
-  overflow-y: auto;
-  overflow-x: hidden;
   box-sizing: border-box;
 }
-
-
 
 /* Catalog */
 
