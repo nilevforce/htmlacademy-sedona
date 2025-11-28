@@ -220,6 +220,84 @@
           </svg>
         </a>
       </footer>
+
+      <div class="modal-container">
+        <div class="modal hotel-search-modal">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="POST">
+
+            <label class="field-label check-in-label" for="check-in-date">Дата заезда:</label>
+            <div class="field-control check-in-control">
+              <input class="field-input input-date" id="check-in-date" type="text" name="check-in-date"
+                placeholder="Укажите дату" required>
+              <p class="field-message is-error is-active">Мы не можем отправить вас в прошлое.</p>
+            </div>
+
+            <label class="field-label check-out-label" for="check-out-date">Дата выезда:</label>
+            <div class="field-control check-out-control">
+              <input class="field-input input-date" id="check-out-date" type="text" name="check-out-date"
+                placeholder="Укажите дату" required>
+              <p class="field-message">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+
+            <label class="field-label adults-label" for="count-adults">Взрослые:</label>
+            <div class="field-control counter-control adults-control">
+              <button class="counter-button minus" type="button" aria-label="Уменьшить количество">
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+                </svg>
+              </button>
+              <input class="field-input" id="count-adults" type="number" name="count-adults" min="1" value="2">
+              <button class="counter-button plus" type="button" aria-label="Увеличить количество">
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="children-label-wrapper">
+              <label class="field-label children-label" for="count-children">Дети:</label>
+
+              <span class="tooltip">
+                <button type="button" class="tooltip-toggle">
+                  <svg class="tooltip-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z" fill="white" />
+                  </svg>
+                </button>
+                <div class="tooltip-content">
+                  <span class="tooltip-text" role="tooltip">Укажите количество детей, которые будут с вами, возраст
+                    которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </div>
+              </span>
+            </div>
+            <div class="field-control counter-control children-control">
+              <button class="counter-button minus" type="button" aria-label="Уменьшить количество">
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+                </svg>
+              </button>
+              <input class="field-input counter-input" id="count-children" type="number" name="count-children" min="0"
+                value="0" aria-describedby="count-children-description">
+              <button class="counter-button plus" type="button" aria-label="Увеличить количество">
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+
+            <button class="button button-secondary submit" type="submit">Найти</button>
+          </form>
+
+
+          <button class="modal-close" type="button" aria-label="Закрыть"></button>
+        </div>
+      </div>
+
     </div>
   </body>
 
