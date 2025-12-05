@@ -684,7 +684,7 @@ main {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-container.close {
+.modal-container.closed {
   display: none;
 }
 
